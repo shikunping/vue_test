@@ -1,6 +1,8 @@
 # vue_test
 about vue practice
 利用vue-cli+webpack搭建vue项目
+
+
 第一步：全局安装vue-cli
  ```
  npm install vue-cli -g
