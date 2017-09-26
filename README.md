@@ -44,7 +44,7 @@ events.js:160
 ```
 解决：端口默认是8080，被占用了，在文件夹config/index.js把端口改成你自己设置的端口
 
-#引入less
+# 引入less
 一、下载。(进入项目中，执行以下命令)
 ```
 npm install less less-loader --save-dev
