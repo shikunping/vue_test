@@ -43,5 +43,24 @@ events.js:160
       throw er; // Unhandled 'error' event
 ```
 解决：端口默认是8080，被占用了，在文件夹config/index.js把端口改成你自己设置的端口
+
+#引入less
+一、下载。(进入项目中，执行以下命令)
+```
+npm install less less-loader --save-dev
+```
+执行完之后在package.js文件里会看到devDependencies对象里多了下面的代码
+```
+"less": "^2.7.2",
+ "less-loader": "^4.0.5",
+```
+二、打开build/webpack.base.conf.js，在module对象的属性rules后面添加下面的代码
+```
+{
+        test: /\.less$/,
+        loader: "style-loader!css-loader!less-loader",
+}
+```
+
  
 
