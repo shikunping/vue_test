@@ -1,7 +1,5 @@
-# vue_test
-about vue practice
 
-利用vue-cli+webpack搭建vue项目
+# 利用vue-cli+webpack搭建vue项目
 
 
 第一步：全局安装vue-cli
@@ -25,7 +23,7 @@ about vue practice
  npm run dev
  ```
  
- 搭建过程中出现的一些错误提示：
+ # 搭建过程中出现的一些错误提示：
  错误一：
  ```
  To use this template, you must update following to modules:
