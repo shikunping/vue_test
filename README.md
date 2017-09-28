@@ -59,6 +59,36 @@ npm install less less-loader --save-dev
         loader: "style-loader!css-loader!less-loader",
 }
 ```
+# 非父组件之间的传值
+https://cn.vuejs.org/v2/guide/components.html#非父子组件通信 官网这里解释的简单，看的一脸懵逼，查了下网友分享的用法，借鉴了下思路
+在main.js文件创建Bus对象，
+```
+new Vue({
+  el: '#app',
+  router,
+  template: '<App/>',
+  components: { App },
+  data: {
+    Bus: new Vue()
+  }
+})
+```
+我的环境是头部H和底部F分别是两个组件，切换F的tab实现H文本的切换，这时候需要点击F的时候把相应位置的文本值传给H
+H需要做的是在created钩子函数里监听事件,value是F触发headTitle时传的值
+```
+this.$root.Bus.$on('headTitle', value => {
+  this.title = value;
+})
+```
+F负责在特定场合触发headTitle,text是根据点击不同的tab而传不同的值
+```
+methods: {
+    switchTab (index, text) {
+      this.$root.Bus.$emit('headTitle', text);
+    }
+}
+```
+
 
  
 
