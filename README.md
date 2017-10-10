@@ -1,3 +1,6 @@
+# 展示图片
+![效果](https://raw.githubusercontent.com/shikunping/images/master/alert.png)
+
 
 # 利用vue-cli+webpack搭建vue项目
 
