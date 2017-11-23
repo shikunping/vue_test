@@ -1,6 +1,6 @@
 # 展示图片
 ![效果](https://raw.githubusercontent.com/shikunping/images/master/QQ%E5%9B%BE%E7%89%8720171010105204.png)
-
+![效果](https://github.com/shikunping/images/blob/master/QQ%E5%9B%BE%E7%89%8720171010105204.png)
 
 # 利用vue-cli+webpack搭建vue项目
 
